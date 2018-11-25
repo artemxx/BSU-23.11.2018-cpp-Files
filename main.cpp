@@ -17,6 +17,8 @@ int main() {
     } else {
       cout << "error" << "\n";
     }
+    input.close();
+    output.close();
   }
 #endif
 
@@ -24,6 +26,7 @@ int main() {
   {
     ofstream output("output.txt", ios::app);
     cout << "kek";
+    output.close();
   }
 #endif
 
@@ -39,6 +42,7 @@ int main() {
     } else {
       cout << "error" << "\n";
     }
+    input.close();
   }
 #endif
 
@@ -51,6 +55,7 @@ int main() {
       7,8,9
     */
     ifstream input("input.txt");
+    // input.seekg(-2, ios_base::seek_dir::_S_beg);
     cout << left;
     cout << setfill('.');
     int n, m;
@@ -69,6 +74,7 @@ int main() {
         cout << setw(10) << x;
       }
     }
+    input.close();
   }
 #endif
 
